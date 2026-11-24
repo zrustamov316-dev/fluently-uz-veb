@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fluently.uz — Tillar va IT Taqdimotlari</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%233b82f6'/%3E%3Cstop offset='100%25' stop-color='%2310b981'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='43' text-anchor='middle' fill='white' font-size='34' font-weight='800' font-family='Arial, sans-serif'%3EF%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <h1>Fluently.uz</h1>
+        <p>Ingliz tili, Rus tili va Informatika / IT — interaktiv slayd-darslar</p>
+      </div>
+      <div class="section-tabs" id="sectionTabs"></div>
+    </header>
+
+    <div class="tracks-grid" id="tracksGrid"></div>
+
+    <div class="workspace">
+      <aside class="lessons-sidebar">
+        <h3>Darslar ro'yxati</h3>
+        <div id="lessonsList"></div>
+      </aside>
+
+      <main class="deck-panel">
+        <div class="deck-top">
+          <span class="pill" id="lessonBadge">Yuklanmoqda...</span>
+          <span id="slideCounter" class="slide-counter"></span>
+        </div>
+
+        <div class="slide-box">
+          <h2 id="slideTitle"></h2>
+          <p id="slideSummary"></p>
+        </div>
+
+        <div class="task-box">
+          <strong>Amaliy vazifa</strong>
+          <p id="lessonTask"></p>
+        </div>
+
+        <div class="deck-controls">
+          <button class="nav-btn" id="prevSlideBtn" type="button">Oldingi slayd</button>
+          <button class="nav-btn" id="nextSlideBtn" type="button">Keyingi slayd</button>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
